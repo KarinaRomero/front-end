@@ -1,0 +1,6 @@
+@mixin define-borders ($top, $right, $left, $bottom) {
+    border-top: $top;
+    border-right: $right;
+    border-left: $left;
+    border-bottom: $bottom;
+}

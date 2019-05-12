@@ -1,0 +1,23 @@
+@media (max-width: 800px) {
+    .main_section {
+        padding: 4%;
+    }
+    .products {
+        padding: 4%;
+        display: inherit;
+        height: auto;
+        text-align: center;
+    }
+    .product {
+        margin-top: auto;
+    }
+    .benefits, .ratings {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4%;
+    }
+    .rating {
+        margin-bottom: 5%;
+    }
+
+}

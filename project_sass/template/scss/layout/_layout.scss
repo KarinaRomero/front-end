@@ -1,0 +1,85 @@
+body {
+    font-family: $font-base;
+    font-size: $font-base-size;
+    color: $color-grey;
+    margin: 0px;
+}
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+.header {
+    background: $color-branding;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    justify-content: space-between;
+    & ul {
+        display: flex;
+        height: inherit;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    & ul li {
+        height: inherit;
+    }
+}
+.logotype img {
+    border-radius: $border-radius;
+}
+figure {
+    margin: 0;
+}
+img {
+
+}
+.hero {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:$color-branding;
+}
+.hero img{
+    object-fit: cover;
+}
+.social-link {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px 50px;
+    margin: 0px 10px;
+    background-repeat: no-repeat;
+    &.twitter {
+        background-image: $url-image-twitter;
+    }
+    &.linkedin {
+        background-image: $url-image-linkedin;
+    }
+    &.github {
+        background-image: $url-image-github;
+    }
+}
+.contact {
+    background-color: $color-white;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer {
+    background-color:$color-primary;
+    color: $color-secondary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & img{
+        vertical-align: middle;
+    }
+}

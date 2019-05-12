@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Animable js</title>
+</head>
+<body>
+  <div class="container">
+    <div class="ball" id="ball">Hello World!</div>
+  </div>
+  <script>
+    const $ball = document.getElementById('ball');
+    console.log($ball);
+    $ball.animate([
+      // From
+      {
+        transform: 'translateX(0)'
+      },
+      // To
+      {
+        transform: 'translateX(500px)'
+      }
+    ],
+    {
+      duration: 1000,
+      delay: 1000,
+      direction: 'normal',
+      easing: 'linear',
+      iterations: Infinity,
+      fill: 'forwards',
+      iterationStart: 0.5
+      //endDelay:
+    });
+  </script>
+</body>
+</html>

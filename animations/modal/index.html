@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <div class="nav">Bienvenido!</div>
+    <div class="wrapper">
+      <button class="btn active-modal" id="btnActiveModal">Click here!</button>
+    </div>
+    <img src="./img/lorem.png" width="100vw" height="100vh"/>
+    <img src="./img/lorem.png" width="100vw" height="100vh"/>
+    <img src="./img/lorem.png" width="100vw" height="100vh"/>
+    <img src="./img/lorem.png" width="100vw" height="100vh"/>
+    <img src="./img/lorem.png" width="100vw" height="100vh"/>
+    <img src="./img/lorem.png" width="100vw" height="100vh"/>
+    <div class="overlay " id="overlay">
+      <div class="modal" id="modal">
+          <div class="header-modal">
+              <button class="btn secondary" id="btnHideModal">X</button>
+          </div>
+          <h1>Este es un ejemplo de modal</h1>
+        <p>¿Estas de acuerdo?</p>
+        <div class="buttons-group">
+            <button class="btn primary" id="btnCloseModal">Si</button>
+            <button class="btn secondary" >No</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const $btnHideModal = document.getElementById('btnHideModal');
+      console.log($btnHideModal);
+      const $modal = document.getElementById('modal');
+      console.log($modal);
+      const $overlay = document.getElementById('overlay');
+      console.log($overlay);
+      const $btnActiveModal = document.getElementById('btnActiveModal');
+      console.log($btnActiveModal);
+      const $btnCloseModal = document.getElementById('btnCloseModal');
+      console.log($btnCloseModal);
+
+      $overlay.addEventListener('click', (event)=>{
+        $modal.style.animation = 'out 0.8s forwards';
+        $overlay.classList.remove('active');
+      });
+      $btnActiveModal.addEventListener('click',(event)=>{
+        $modal.style.animation = 'in 0.8s';
+        $overlay.classList.add('active');
+      });
+      $btnHideModal.addEventListener('click', (event)=>{
+        console.log(event);
+        $modal.style.animation = 'out 0.8s forwards';
+        $overlay.classList.remove('active');
+      });
+      $btnCloseModal.addEventListener('click', (event)=>{
+        console.log(event);
+        $modal.style.animation = 'out 0.8s forwards';
+        $overlay.classList.remove('active');
+      });
+    </script>
+  </body>
+</html>

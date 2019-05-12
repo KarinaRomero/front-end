@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Animations from js</title>
+</head>
+<body>
+  <div class="container">
+    <div class="square" id="square">Hello World!</div>
+  </div>
+  <script>
+    const $square = document.getElementById('square');
+    $square.addEventListener('animationend', (event)=>{
+      console.log('event:  '+ event);
+      if(event.animationName == 'bounce') {
+        $square.style.animationName = 'square stairs';
+        $square.style.animationDuration = '3s';
+      }
+    })
+  </script>
+</body>
+</html>

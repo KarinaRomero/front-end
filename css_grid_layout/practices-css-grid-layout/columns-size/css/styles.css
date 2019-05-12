@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: repeat(4, 1fr) ;
+    height: 100vh;
+
+}
+.item {
+    border: solid 1px red;
+    background-color: lightslategray;
+}
+.item:nth-of-type(1) {
+    background-color: aquamarine;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item:nth-of-type(8) {
+    background-color: rgb(255, 204, 127);
+    grid-column: 1 / -1;
+}
+.item:nth-of-type(7) {
+    background-color: rgb(202, 155, 211);
+    grid-column: 2 / 4;
+}
+.item .item {
+    background-color: yellow;
+}
+.header {
+    grid-area: header;
+}
+.left {
+    grid-area: left;
+}
+.contenido {
+    grid-area: contenido;
+}
+.footer {
+    grid-area: footer;
+}

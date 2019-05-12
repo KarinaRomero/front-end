@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+.hero {
+  background-image: linear-gradient(to right, #0A2138, #0E3052) ;
+  color: white;
+  padding: 32px 15px;
+  display: grid;
+  grid-template-columns: minmax(auto, 1024px);
+  justify-content: center;
+}
+.hero-container {
+  display: grid;
+  grid-template-columns: 100px 1fr 320px;
+  grid-template-areas: "badge title form"
+                       ". description form"
+                       ". countdown form";
+  grid-gap: 10px;
+}
+.badge {
+  grid-area: badge;
+}
+.description {
+  grid-area: description;
+}
+.title {
+  grid-area: title;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.form {
+  grid-area: form;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5em;
+  border-radius: 10px;
+}
+.form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px, solid #dbdbe2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.form p {
+  font-size: 20px;
+  color: #3a3b3f;
+  margin-bottom:  1em;
+  font-family: 'Ubuntu', sans-serif;
+}
+.form button {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #0E3052;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border:none;
+  font-size: 16px;
+  border-bottom: 5px solid #0A2138;
+  display: inline-block;
+}
+.countdown {
+  grid-area: countdown;
+
+}
+.countdown p{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif;
+}
+.countdown span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 33px;
+}
+.countdown span::after {
+  content: ":";
+  display: inline-block;
+  margin: 0 5px;
+}
+.countdown span:last-child::after {
+  display: none;
+}
+p {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 768px)
+{
+  .hero-container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas: "badge title"
+                         "description description"
+                         "form form"
+                         "countdown countdown";
+  }
+}

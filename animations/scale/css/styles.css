@@ -1,0 +1,29 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #52161C;
+    color: #52161C;
+    perspective: 200px;
+    /*perspective-origin: bottom;
+    perspective-origin: bottom left;*/
+    perspective-origin: center;
+}
+.container {
+    border: 1px solid #5CFA80;
+}
+.container:hover .square {
+    transform: scale(2, 0.5);
+}
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #40AE59;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}

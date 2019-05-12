@@ -1,0 +1,83 @@
+:root{
+    --brand-color: #222629;
+    --green-light-color: #86c232;
+    --green-dark-color: #61892f;
+    --white-color: white;
+    --gray-dark-color: #474B4f;
+
+    --padding-base: 10px;
+    --radius: 5px;
+
+    --font-size-base: 12px;
+    --font-family-base: 'Montserrat', sans-serif !important;
+    --font-family-header: 'Quicksand', sans-serif !important;
+
+    --box-shadow-base: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container {
+    color: var(--white-color);
+    max-width: 900px;
+    margin: auto;
+}
+.row {
+    display: flex;
+}
+.col-1 {
+    width: 8.3333333333%;
+}
+.col-2 {
+    width: 16.666666666%;
+}
+.col-3 {
+    width: 24.999999999%;
+}
+.col-4 {
+    width: 33.333333332%;
+}
+.col-5 {
+    width: 41.666666665%;
+}
+.col-6 {
+    width: 49.999999998%;
+}
+.col-7 {
+    width: 58.3333333331%;
+}
+.col-8 {
+    width: 66.6666666664%;
+}
+.col-9 {
+    width: 74.9999999997%;
+}
+.col-10 {
+    width: 83.3333333333%;
+}
+.col-11 {
+    width: 91.6666666663%;
+}
+.col-12 {
+    width: 100%;
+}
+[class|=col] {
+    /*border: 1px solid red;*/
+    padding: 50px;
+}
+.col-4 {
+    text-align: center;
+}
+h1 {
+    color: var(--green-light-color);
+}
+@media(max-width: 900px) {
+    .row {
+        display: inherit;
+    }
+    [class|=col] {
+        /*border: 1px solid red;*/
+        width: 100%;
+    }
+}
+img {
+    width: 100%;
+   height: auto;
+}

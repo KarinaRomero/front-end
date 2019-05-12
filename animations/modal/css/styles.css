@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  /*background-color: #4abdac;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+img {
+  width: 100vw;
+  height: 150vh;
+}
+.nav {
+  font-size: 2em;
+  width: 100vw;
+  height: 100px;
+  background-color: #4abdac;
+  /*background-color: #267066;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 -0.2em rgba(255, 255, 255, 1);
+}
+.wrapper {
+  padding: 2em;
+}
+.btn.active-modal{
+  background-color: #FC4A1A;
+  box-shadow: inset 0 -0.3em rgba(175, 44, 9, 1);
+  color: white;
+  border-radius: 50%;
+  padding: 50%;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1.8s ease-in;
+  opacity: 0;
+  visibility: hidden;
+}
+.header-modal{
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal {
+  max-width: 500px;
+  background-color: #f7B733;
+  animation: in 0.8s;
+  padding: 2em;
+  border-radius: .5em;
+  text-align: center;
+}
+.btn.primary{
+  background-color: #FC4A1A;
+  box-shadow: inset 0 -0.3em rgba(175, 44, 9, 1);
+  color: white;
+}
+.btn.secondary{
+  background-color: #DFDCE3;
+  box-shadow: inset 0 -0.3em rgba(143, 138, 150, 1);
+  color: black;
+}
+.btn {
+  text-align: center;
+  padding: .6em .8em;
+  border: none;
+  margin: 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+
+  outline: 0;
+  transition: .2s;
+  will-change: transform;
+}
+.btn.primary:hover {
+  background-color: #AF2C09;
+}
+.btn.secondary:hover {
+  background-color: #8F8A96;
+}
+@keyframes in {
+  0% {
+    transform: translateY(-3000px);
+  }
+  60% {
+    transform: translateY(25px);
+  }
+  75% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(5px);
+  }
+}
+@keyframes out {
+  0% {
+    transform: translateY(5px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+
+  75% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-3000px);
+  }
+}

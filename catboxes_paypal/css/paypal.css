@@ -1,0 +1,29 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.row {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+i {
+    font-size: 100px;
+
+    color: var(--white-color);
+}
+h1 {
+
+    color: var(--green-light-color);
+}
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+.fail {
+    color: var(--fail-color);
+}

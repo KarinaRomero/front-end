@@ -1,0 +1,33 @@
+/* --- Logo --- */
+.logo {
+    grid-area: logo;
+    /*
+    background-color:  hwb(hue, whiteness, blackness);
+    background-color:  hwb(0-360, 0-100%, 0 100%, alpha);
+    background-color: hwb(220, 20%, 50%, .5);
+    */
+    /*
+    background-color: gray(0-255);
+    compila como un rgb(0,0,0)
+    background-color: gray(204);
+    */
+    background-color: var(--color);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  .logo img {
+    align-self: center;
+  }
+  .logo-style {
+    font-weight: bold;
+  }
+  .menu-var {
+    grid-area: menu-var;
+    background-color:var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }

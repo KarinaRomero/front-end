@@ -1,0 +1,14 @@
+{
+  "name": "project-less",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "lessc ./less/styles.less ./css/styles.css ",
+    "watch": "less-watch-compiler less css styles.less",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

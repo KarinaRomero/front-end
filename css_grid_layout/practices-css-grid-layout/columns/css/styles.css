@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: grid;
+    /* se definen las columnas
+    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 25% 50% 25%;*/
+    grid-template-columns: 25% 200px 25%;
+
+}
+.item {
+    background-color: lightskyblue;
+}

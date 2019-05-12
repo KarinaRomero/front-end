@@ -1,0 +1,19 @@
+// Declaring variables
+@border-width: 1px;
+@red: #842210;
+
+// Using variables
+body {
+    border: @border-width solid @red;
+}
+
+.margin-bottom(@margin: 32px * 2) {
+    margin-bottom: 12px;
+}
+.element {
+    .margin-bottom(16px)
+}
+
+.padding(@padding: 32px) {
+    padding-left: @padding;
+   }

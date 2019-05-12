@@ -1,0 +1,33 @@
+/*--------------------------------*\
+    $Typography
+\*--------------------------------*/
+
+/*
+* Branding Colors
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family : $font-headers;
+    font-weight : $font-headers-weight;
+    color: $color-branding-second;
+}
+
+h1 {
+    font-size: 2.5em;
+    letter-spacing: -0.2px;
+    line-height: 1.5em;
+    margin: 0px;
+    & strong {
+        color: $color-secondary;
+    }
+}
+
+h2 {
+    color: $color-primary;
+    font-size: 20px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #52161C;
+    color: #52161C;
+}
+.container {
+    border: 1px solid #5CFA80;
+    width: 100%;
+}
+.container:hover .square {
+    /*transform-origin: right top ;
+    transform: rotateZ(-45deg);
+    animation-play-state: paused;*/
+}
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #40AE59;
+    border-radius: 50%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation-name: chage;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    /*animation-direction: alternate;*/
+    /*animation-fill-mode: forwards;*/
+    /*animation-play-state: running;*/
+}
+@keyframes chage {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 240px);
+    }
+}

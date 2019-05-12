@@ -1,0 +1,78 @@
+---> comandos curl
+
+---->   Para establecer en boton de comenzar
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "get_started": {
+        "payload": "GET_STARTED_RECETARIO"
+        }
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=YOUR_TOKEN"
+
+---->   Para establecer el saludo de bienvenida
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "greeting": [
+        {
+            "locale": "default",
+            "text": "Hola {{user_first_name}}, soy El Recetario y puedo recomendarte deliciosas recetas"
+        },
+        {
+            "locale": "en_US",
+            "text": "Hi {{user_first_name}}, I am El Recetario and I can recommend delicious recipes"
+        }
+    ]
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=YOUR_TOKEN"
+
+---->   Para establecer un menú
+----> composer: es para habilitar o deshabilitar si el usuario puede escribir
+
+curl -X POST -H "Content-Type: application/json" -d '{
+    "persistent_menu": [
+        {
+            "locale": "default",
+            "composer_input_disabled": false,
+            "call_to_actions": [
+                {
+                    "title": "El Recetario",
+                    "type": "nested",
+                    "call_to_actions": [
+                        {
+                            "title": "Acerca",
+                            "type": "postback",
+                            "payload": "ABOUT_PAYLOAD"
+                        }
+                    ]
+                },
+                {
+                    "title": "Menú",
+                    "type": "nested",
+                    "call_to_actions": [
+                        {
+                            "title": "Recetas",
+                            "type": "postback",
+                            "payload": "RECIPES_PAYLOAD"
+                            "call_to_actions": [
+                                {
+                                    "title": "Chiles rellenos",
+                                    "type": "postback",
+                                    "payload": "CHILES_PAYLOAD"
+                                },
+                                {
+                                    "title": "Lasaña",
+                                    "type": "postback",
+                                    "payload": "LASAÑA_PAYLOAD"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "web_url",
+                    "title": "Sitio web",
+                    "url": "https://",
+                    "webview_height_ratio": "full"
+                }
+            ]
+        }
+    ]
+}' "https://graph.facebook.com/v2.6/me/messenger_profile?access_token=YOUR_TOKEN"

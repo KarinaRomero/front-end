@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #52161C;
+    color: #52161C;
+}
+.container {
+    border: 1px solid #5CFA80;
+}
+.container:hover .square {
+    transform-origin: right top ;
+    transform: rotateZ(-45deg);
+}
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: #40AE59;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}

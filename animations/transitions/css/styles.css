@@ -1,0 +1,21 @@
+body {
+    background-color: #52161C;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #40AE59;
+    /*transition-property: width, height;*/
+    /*transition-duration: 1s;*/
+    /*transition-delay: 1s;*/
+    /*transition-timing-function: ease;*/
+    transition: height 1s  ease;
+}
+.ball:hover {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #40AE59;
+}

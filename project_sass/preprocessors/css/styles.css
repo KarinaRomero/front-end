@@ -1,0 +1,75 @@
+/*
+Error: Invalid US-ASCII character "\xC3"
+        on line 27 of scss/lib/_variables.scss
+        from line 1 of scss/styles.scss
+
+22: $color-error: rgb(218,79,73);
+23: $color-invert: invert($color-error);
+24: $color-info:   rgb(66, 184, 221);
+25: $color-success: rgb(91,183,91);
+26: 
+27: // Tipografía
+28: 
+29: $basefont: 'Quicksand', sans-serif;
+30: $basefontsize: 16px;
+31: $baseheadingfont: $basefont;
+32: $baseheadingfontweight: bold;
+
+Backtrace:
+scss/lib/_variables.scss:27
+scss/styles.scss:1
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/util.rb:1090:in `rescue in block in find_encoding_error'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/util.rb:1087:in `block in find_encoding_error'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/util.rb:1086:in `each'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/util.rb:1086:in `each_with_index'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/util.rb:1086:in `find_encoding_error'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/util.rb:814:in `check_sass_encoding'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/engine.rb:444:in `check_encoding!'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/engine.rb:400:in `_to_tree'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/engine.rb:321:in `to_tree'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/stack.rb:88:in `block in with_import'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/stack.rb:135:in `with_frame'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/stack.rb:88:in `with_import'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/stack.rb:79:in `block in with_base'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/stack.rb:135:in `with_frame'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/stack.rb:79:in `with_base'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/plugin.rb:109:in `method_missing'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/exec/base.rb:50:in `parse'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/lib/sass/exec/base.rb:18:in `parse!'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/lib/ruby/gems/2.2.0/gems/sass-3.7.2/bin/sass:13:in `<top (required)>'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/bin/sass:23:in `load'
+/Users/fenix/.rvm/rubies/ruby-2.2.4/bin/sass:23:in `<main>'
+/Users/fenix/.rvm/gems/ruby-2.2.4@global/bin/ruby_executable_hooks:15:in `eval'
+/Users/fenix/.rvm/gems/ruby-2.2.4@global/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xC3\"\A         on line 27 of scss/lib/_variables.scss\A         from line 1 of scss/styles.scss\A \A 22: $color-error: rgb(218,79,73);\A 23: $color-invert: invert($color-error);\A 24: $color-info:   rgb(66, 184, 221);\A 25: $color-success: rgb(91,183,91);\A 26: \A 27: // Tipografía\A 28: \A 29: $basefont: 'Quicksand', sans-serif;\A 30: $basefontsize: 16px;\A 31: $baseheadingfont: $basefont;\A 32: $baseheadingfontweight: bold;"; }

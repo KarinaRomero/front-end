@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <link rel="stylesheet" href="../css/grid.css" />
+    <title>Boxes</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar fadeInDown">
+        <a href="../index.html"><i class="fab fa-css3"></i></a>
+      <div class="nav_options">
+        <ul>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">FAQS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Container-->
+    <div class="container">
+      <div class="row">
+        <div class="col-4 fadeInUp">
+          <img src="../img/bed2.jpg"/>
+          <span class="product_content">
+              <h1>Plushi</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore
+              magna aliqua.</p>
+          </span>
+        </div>
+        <div class="col-8">
+          <div class="payment_module fadeInUp">
+            <h1>Purchase code #3245</h1>
+            <p class="instructions">Instructions: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <form action="Your_PAYPAL_Account" method="POST">
+              <div class="form-gruop">
+                  <label for="inputName">Name</label>
+                  <input id="inputName" name="inputName" placeholder="Jhon Doe" type="text">
+              </div>
+              <div class="form-gruop">
+                  <label for="inputPhone">Phone number</label>
+                  <input id="inputName" name="inputPhone" placeholder="(443)-134-34-34" type="tel" placeholder="Phone">
+              </div>
+              <div class="form-gruop">
+                  <label for="inputName">Email</label>
+                  <input id="inputEmail" name="inputName" type="inputEmail" placeholder="example@email.com">
+              </div>
+              <input class="main_button cancel" type="button" value="Cancel">
+              <button class="main_button" name="submit">Continue</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Container-->
+    <footer class="footer">
+      <div class="option">
+        <h4 class="">Terms and Conditions</h4>
+      </div>
+      <div class="option">
+        <a href="mailto:yourEmail@brand.com"><i class="fas fa-envelope"></i> contaco@brand.com</a>
+      </div>
+    </footer>
+    <script src="./js/view.js"></script>
+  </body>
+</html>

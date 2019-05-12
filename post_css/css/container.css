@@ -1,0 +1,9 @@
+/* --- Container --- */
+.container {
+  display: grid;
+  grid-template: 80px 1fr / 300px 1fr;
+  height: 100vh;
+  grid-template-areas:
+    'logo header'
+    'menu-var list-songs';
+}

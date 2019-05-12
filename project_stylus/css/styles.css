@@ -1,0 +1,33 @@
+/*@import "lib/_functions.styl"
+
+@import "elements/_buttons.styl"
+@import "elements/_fonts.styl"
+@import "elements/_inputs.styl"
+
+@import "layout/_cards.styl"
+@import "layout/_layout.styl"*/
+.clasification {
+  width: 500px;
+}
+.clasification:hover {
+  background: #00f;
+}
+.ie-8 .clasification:before {
+  color: #f00;
+}
+.ie-8 .clasification:before img {
+  padding: 2px;
+}
+body {
+  font: 12px/1.4 "Lucida Grande", Arial, sans-serif;
+  background: #000;
+  text-color: #ccc;
+}
+form input {
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+p {
+  font-size: 25px;
+}

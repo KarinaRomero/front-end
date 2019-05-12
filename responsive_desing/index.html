@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/jpg" href="./img/my_photo.png" />
+  <style>
+   body{font-family:'Roboto',system-ui;color:#697F8C;margin:0px}h1,h2,h3{font-family:'Ubuntu',system-ui}h1{font-size:40px;letter-spacing:-0.2px;line-height:1.5em;margin:0px;max-width:500px}.header{background-color:#20272C;background-image:linear-gradient(to right,#20272C,#1C1F2A);color:#697F8C;display:flex;align-items:center;height:70px;justify-content:space-between;flex-wrap:wrap}ul{margin:0;padding:0;list-style:none}figure{margin:0}.header ul{display:flex;height:inherit}.header ul li{height:inherit}.header a{display:flex;align-items:center;height:inherit;text-decoration-line:none;padding:0px 10px;color:#697F8C}h1 strong{color:#51AEE5}h2{color:#697F8C;font-size:20px;margin-bottom:40px}.menu{height:inherit}.hero{height:300px;display:flex;align-items:center;justify-content:space-between;background-color:#20272C;background-image:linear-gradient(to right,#20272C,#1C1F2A);flex-wrap:wrap}.hero img{object-fit:cover}.proyects{background-color:#8FADBF;padding:20px}.project{border:solid 0.5px #367499;border-radius:5px;margin:10px;margin-bottom:15px;padding:30px;background-color:white;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}.project strong{color:#367499}.project-title{font-size:40px;margin-top:0px;margin-bottom:10px}.project-description{margin:10px 0;font-size:20px}.project-details{width:50%}.project-image-wrapper{width:50%}.project-image{max-width:100%}.container{max-width:1000px;flex:1;margin:0 auto;display:inherit;justify-content:inherit;align-items:inherit;height:inherit;flex-wrap:inherit}.burguer-button{width:40px;height:40px;border-radius:50%;color:#367499;background-color:rgba(54,90,221,0.5);display:block;line-height:40px;text-align:center;position:fixed;z-index:4;left:5px;right:5px;display:none}@media screen and (max-width:1024px){.container{padding:0 1em}.hero{height:auto;position:relative;overflow:hidden;padding:2em}.hero h1{font-size:2em;z-index:2}.hero img{position:absolute;z-index:1;left:0;right:0;top:0;bottom:0;width:100%}}@media screen and (max-width:767px){.header{display:block;height:auto}.header ul{display:initial}.header ul li{height:50px}.header a{justify-content:center;height:40px;font-size:2em;text-decoration:underline;margin-bottom:0.5em}.header .logotype{text-align:center}.menu{position:fixed;background-color:rgb(28,31,42,0.5);z-index:3;top:0;left:-100vw;bottom:0;width:100vw;display:flex;align-items:center;justify-content:center}.project{display:block}.project-details{width:auto;font-size:16px}.project-image-wrapper{width:auto;text-align:center}.project-title{font-size:1.5em;margin:0.4em 0}.project-description{font-size:0.8em;margin:0.4em 0}.project-url{font-size:1em;margin:0.4em 0}.burguer-button{display:block}}@media screen and (max-width:480px){.project-details{font-size:12px}.hero h1{font-size:1.5em;z-index:2}}@media screen and (max-width:320px){.hero h1{font-size:1em;z-index:2}.hero{padding:2em 1em}}
+  </style>
+  <title>Portafolio</title>
+</head>
+
+<body>
+  <i class="fas fa-align-justify burguer-button" id="
+  burguer-button"></i>
+  <header class="header">
+    <div class="container">
+        <figure class="logotype">
+            <img alt="Logo KR" src="./img/my_photo.png" srcset="./img/my_photo.png, ./img/my_photo_2x.png 2x"width="50px" height="50px"/>
+            </figure>
+            <nav class="menu">
+              <ul>
+                <li>
+                  <a href="#experiencia">Experiencia</a>
+                </li>
+                <li>
+                  <a href="#proyectos-personales">Proyectos personales</a>
+                </li>
+                <li>
+                  <a href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </nav>
+    </div>
+  </header>
+   <section class="hero">
+      <div class="container">
+    <h1>Hola soy <strong>Karina</strong> <br/>desarrolladora de software <br/>
+      con pasión por la <strong>programación</strong></h1>
+    <img src="./img/key-board.png" width="400px" height="300px"/>
+    </div>
+  </section>
+     <section id="proyectos-personales" class="proyects">
+        <div class="container">
+            <h2>Proyectos personales</h2>
+      <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Framework sfRTC</h3>
+          <p class="project-description">Creación de un <strong>framework</strong> que permite implementar la
+            tecnologia <strong>WebRTC</strong> en
+            Navegadores Web y sistemas móviles <strong>iOS y Android</strong></p>
+          <a class="project-url" href="https://github.com/KarinaRomero/sfRTC-web-framework" target="_blank">Ver mas información...</a>
+        </div>
+        <figure class="project-image-wrapper">
+          <img class="project-image" src="./img/sfRTC.png" />
+        </figure>
+      </article>
+      <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Framework sfRTC</h3>
+            <p class="project-description">Creación de un <strong>framework</strong> que permite implementar la
+              tecnologia <strong>WebRTC</strong> en
+              Navegadores Web y sistemas móviles <strong>iOS y Android</strong></p>
+            <a class="project-url" href="https://github.com/KarinaRomero/sfRTC-web-framework" target="_blank">Ver mas información...</a>
+          </div>
+          <figure class="project-image-wrapper">
+            <img class="project-image" src="./img/sfRTC.png" />
+          </figure>
+        </article>
+        </div>
+    </section>
+    <div class="container">
+      <h2 class="experience-tag">Experiencia</h2>
+    </div>
+      <section id="experiencia" class="experience">
+        <div class="container">
+      <article class="work">
+        <figure class="work-image-container">
+            <video class="video-html" src="./img/e.mp4" width="1280" height="720" controls></video>
+        </figure>
+        <div class="work-detail">
+            <h3 class="work-company">Novutek</h3>
+            <h6 class="work-development">Desarrollo de aplicaciones web</h6>
+        <p class="work-time-frame"><small><strong>Periodo:</strong> enero 2017 a octubre 2017</small> </p>
+        <p class="work-position"><small><strong>Puesto:</strong> Ingeniero de software, Junior</small> </p>
+        <p class="work-responsibilities"><strong>Responsabilidades:</strong><br/>
+          <ul>
+            <li>
+              Asistencia a entrevistas con los clientes para tomar requerimientos y validaciones de prototipos.
+            </li>
+            <li>
+              Participación con el equipo de front-end para el diseño de prototipos.
+            </li>
+            <li>
+              Colaboración en equipo para analizar y estructurar el comportamiento del sistema, su comunicación, la
+              relación con otros sistemas y plasmarlos en diagramas UML.
+            </li>
+            <li>
+              De acuerdo con los procesos establecidos en la empresa generar documentación.
+            </li>
+            <li>
+              En el proceso de desarrollo de software se adoptaron características del marco de scrum.
+            </li>
+          </ul>
+        </p>
+        </div>
+      </article>
+      <article class="work">
+          <figure class="work-image-container">
+              <div class="flexible-video">
+                  <iframe class="external-video" width="560" height="315" src="https://www.youtube.com/embed/Io5K9V5JAOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </figure>
+          <div class="work-detail">
+              <h3 class="work-company">Novutek</h3>
+              <h6 class="work-development">Desarrollo de aplicaciones web</h6>
+          <p class="work-time-frame"><small><strong>Periodo:</strong> enero 2017 a octubre 2017</small> </p>
+          <p class="work-position"><small><strong>Puesto:</strong> Ingeniero de software, Junior</small> </p>
+          <p class="work-responsibilities"><strong>Responsabilidades:</strong><br/>
+            <ul>
+              <li>
+                Asistencia a entrevistas con los clientes para tomar requerimientos y validaciones de prototipos.
+              </li>
+              <li>
+                Participación con el equipo de front-end para el diseño de prototipos.
+              </li>
+              <li>
+                Colaboración en equipo para analizar y estructurar el comportamiento del sistema, su comunicación, la
+                relación con otros sistemas y plasmarlos en diagramas UML.
+              </li>
+              <li>
+                De acuerdo con los procesos establecidos en la empresa generar documentación.
+              </li>
+              <li>
+                En el proceso de desarrollo de software se adoptaron características del marco de scrum.
+              </li>
+            </ul>
+          </p>
+          </div>
+        </article>
+        <article class="work">
+            <figure class="work-image-container">
+                <img class="work-image" alt="Logo nvtk" src="./img/work.png" width="50px" height="50px"/>
+            </figure>
+            <div class="work-detail">
+                <h3 class="work-company">Novutek</h3>
+                <h6 class="work-development">Desarrollo de aplicaciones web</h6>
+            <p class="work-time-frame"><small><strong>Periodo:</strong> enero 2017 a octubre 2017</small> </p>
+            <p class="work-position"><small><strong>Puesto:</strong> Ingeniero de software, Junior</small> </p>
+            <p class="work-responsibilities"><strong>Responsabilidades:</strong><br/>
+              <ul>
+                <li>
+                  Asistencia a entrevistas con los clientes para tomar requerimientos y validaciones de prototipos.
+                </li>
+                <li>
+                  Participación con el equipo de front-end para el diseño de prototipos.
+                </li>
+                <li>
+                  Colaboración en equipo para analizar y estructurar el comportamiento del sistema, su comunicación, la
+                  relación con otros sistemas y plasmarlos en diagramas UML.
+                </li>
+                <li>
+                  De acuerdo con los procesos establecidos en la empresa generar documentación.
+                </li>
+                <li>
+                  En el proceso de desarrollo de software se adoptaron características del marco de scrum.
+                </li>
+              </ul>
+            </p>
+            </div>
+          </article>
+          <article class="work">
+              <figure class="work-image-container">
+               <img class="work-image" alt="Logo nvtk" src="./img/work.png" width="50px" height="50px"/>
+              </figure>
+              <div class="work-detail">
+                  <h3 class="work-company">Novutek</h3>
+                  <h6 class="work-development">Desarrollo de aplicaciones web</h6>
+              <p class="work-time-frame"><small><strong>Periodo:</strong> enero 2017 a octubre 2017</small> </p>
+              <p class="work-position"><small><strong>Puesto:</strong> Ingeniero de software, Junior</small> </p>
+              <p class="work-responsibilities"><strong>Responsabilidades:</strong><br/>
+                <ul>
+                  <li>
+                    Asistencia a entrevistas con los clientes para tomar requerimientos y validaciones de prototipos.
+                  </li>
+                  <li>
+                    Participación con el equipo de front-end para el diseño de prototipos.
+                  </li>
+                  <li>
+                    Colaboración en equipo para analizar y estructurar el comportamiento del sistema, su comunicación, la
+                    relación con otros sistemas y plasmarlos en diagramas UML.
+                  </li>
+                  <li>
+                    De acuerdo con los procesos establecidos en la empresa generar documentación.
+                  </li>
+                  <li>
+                    En el proceso de desarrollo de software se adoptaron características del marco de scrum.
+                  </li>
+                </ul>
+              </p>
+              </div>
+            </article>
+        </div>
+    </section>
+     <section class="contact" id="contacto">
+        <div class="container">
+      <form class="form-email" action="/suscription/">
+        <h3 class="form-title">Contacto</h3>
+        <input class="form-input" type="text" placeholder="@example.com" />
+        <input class="form-button" type="submit" value="Enviar"/>
+      </form>
+      <div class="social">
+        <a href="https://twitter.com/betzy_skamm" class="social-link twitter" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/karina-betzabe-romero-ulloa-0834b363/" class="social-link linkedin" target="_blank"></a>
+        <a href="https://github.com/KarinaRomero" class="social-link github" target="_blank"></a>
+      </div>
+      </div>
+    </section>
+ <footer class="footer">
+        <div class="container">
+      <div>
+        <p>
+          Curso de desarrollo web 2019
+          <i class="fas fa-laptop"></i>
+        </p>
+      </div>
+      <div>
+          <p>
+            Designed by <a>KR</a>
+            <i class="fas fa-mug-hot"></i>
+          </p>
+      </div>
+      </div>
+    </footer>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/min/styles.css" />
+  <script src="./js/view-manager.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Ubuntu" rel="stylesheet">
+</body>
+</html>

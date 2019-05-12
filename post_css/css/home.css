@@ -1,0 +1,101 @@
+@import './general.css';
+@import './container.css';
+@import './logo.css';
+@import './menu-var.css';
+@import './header.css';
+@import './list-songs.css';
+/*
+.option:matches(:last-child, :nth-of-type(4), :first-child) {
+  background: #eeb10b;
+}
+.option:matches(:last-child) {
+  background: #857d97;
+}
+*/
+/* custom selectors */
+@custom-selector :--checkeable .checkbox-label, .radio-label;
+
+@custom-selector :--highll :hover, :active;
+
+:--checkeable {
+  cursor: pointer;
+  user-select: none;
+  padding: 3px 7px;
+  border: 1px solid var(--primaryColor);
+  border-bottom: 3px solid var(--primaryColor);
+  color: #151b31;
+  font-size: 12px;
+  border-radius: 5px;
+}
+:--checkeable:--highll {
+  background: #ff344f;
+}
+/*@custom-media --small screen and (max-width: 768px);*/
+@custom-media --extra-small screen and (width < 480px);
+@custom-media --small screen and (width < 768px);
+@custom-media --medium screen and (width >= 768px);
+@custom-media --large screen and (width >= 1024px);
+@media (--extra-small) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'logo'
+      'header'
+      'menu-var'
+      'list-songs';
+  }
+  .list-songs {
+    overflow: inherit;
+  }
+  .section-list-songs {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0 10%;
+  }
+  .menu-var {
+    display: block;
+    padding: 5%;
+    text-align: center;
+  }
+}
+@media (--small) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 70px 1fr 1fr;
+    grid-template-areas:
+      'logo'
+      'header'
+      'list-songs'
+      'menu-var';
+  }
+  .list-songs {
+    overflow: inherit;
+  }
+  .section-list-songs {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0 30%;
+  }
+  .menu-var {
+    display: block;
+    padding: 5%;
+    text-align: center;
+  }
+}
+@media (--medium) {
+  .section-list-songs {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0 10%;
+  }
+}
+@media (--large) {
+  .section-list-songs {
+    grid-template-rows: 1fr ;
+    grid-gap: 10px;
+    padding: 0 10%;
+  }
+}
